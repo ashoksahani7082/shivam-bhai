@@ -59,44 +59,15 @@
             border-radius: 50%;
             pointer-events: none;
         }
-        /* Logo CSS art to match the uploaded image */
-        .logo-container {
+        /* Image Logo CSS */
+        .logo-image {
             width: 120px;
             height: 120px;
             border-radius: 50%;
             border: 3px solid #e5ff00;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            object-fit: cover;
             background: #000;
-            box-shadow: 0 0 20px rgba(229, 255, 0, 0.2), inset 0 0 15px rgba(229, 255, 0, 0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        .logo-sb {
-            font-size: 42px;
-            font-weight: 800;
-            font-style: italic;
-            line-height: 1;
-            display: flex;
-            transform: skewX(-5deg);
-        }
-        .logo-s { color: white; }
-        .logo-b { color: #e5ff00; margin-left: -4px; }
-        .logo-text {
-            font-size: 10px;
-            font-weight: 800;
-            color: white;
-            letter-spacing: 1px;
-            margin-top: 2px;
-            text-transform: uppercase;
-        }
-        .logo-subtext {
-            font-size: 6px;
-            color: #e5ff00;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            box-shadow: 0 0 20px rgba(229, 255, 0, 0.2);
         }
     </style>
 
@@ -128,14 +99,10 @@
     <div class="max-w-4xl mx-auto px-4 py-12 flex flex-col items-center">
         
         <!-- Logo Section -->
-        <div class="mb-6">
-            <div class="logo-container">
-                <div class="logo-sb">
-                    <span class="logo-s">S</span><span class="logo-b">B</span>
-                </div>
-                <div class="logo-text">Shivam Bhai</div>
-                <div class="logo-subtext">- Tennis -</div>
-            </div>
+        <div class="mb-6 flex justify-center">
+            <!-- 🔴 APNA LOGO YAHA LAGAYE 🔴 -->
+            <!-- Neeche 'src' ke andar apni image ka link ya naam daale (jaise: "logo.png" ya "https://...") -->
+            <img src="shivam" alt="Shivam Bhai Logo" class="logo-image">
         </div>
 
         <!-- Main Heading -->
