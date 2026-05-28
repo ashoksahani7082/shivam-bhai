@@ -92,7 +92,7 @@ src="https://www.facebook.com/tr?id=945809556942472&ev=PageView&noscript=1"
         </h2>
 
         <!-- Call To Action Button -->
-        <a href="https://t.me/+HCTuU9D_1fpkNmU1" target="_blank" onclick="fbq('track', 'Subscribe');" class="block text-center w-full bg-gradient-to-r from-[#ff6a00] to-[#ff4e00] hover:from-[#e65f00] hover:to-[#e64600] text-white font-bold text-lg py-4 rounded-xl mt-8 btn-glow transition-all duration-300 transform hover:scale-[1.02] active:scale-95">
+        <a href="https://t.me/+HCTuU9D_1fpkNmU1" target="_blank" class="block text-center w-full bg-gradient-to-r from-[#ff6a00] to-[#ff4e00] hover:from-[#e65f00] hover:to-[#e64600] text-white font-bold text-lg py-4 rounded-xl mt-8 btn-glow transition-all duration-300 transform hover:scale-[1.02] active:scale-95">
             SUBSCRIBE NOW
         </a>
 
@@ -125,7 +125,6 @@ src="https://www.facebook.com/tr?id=945809556942472&ev=PageView&noscript=1"
             
             <!-- Card 3 -->
             <div class="bg-cardBg rounded-2xl p-4 flex flex-col items-center justify-center border border-purple-900/20 aspect-square">
-                <!-- Using a diamond outline icon as a replacement for the specific shield/diamond shape -->
                 <i class="ph ph-diamond text-primary text-2xl mb-2"></i>
                 <span class="font-bold text-sm">24/7</span>
                 <span class="text-[9px] text-textMuted mt-1 tracking-wider">SUPPORT</span>
@@ -155,27 +154,23 @@ src="https://www.facebook.com/tr?id=945809556942472&ev=PageView&noscript=1"
     <!-- JavaScript for Countdown Timer -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            let timeLeft = 23; // Start at 23 seconds like the image
+            let timeLeft = 23; 
             const timerElement = document.getElementById('countdown');
 
             const timer = setInterval(() => {
                 timeLeft--;
                 
-                // Format the time as MM:SS
                 const minutes = Math.floor(timeLeft / 60);
                 const seconds = timeLeft % 60;
                 
-                // Add leading zeros
                 const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
                 const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
                 
                 timerElement.textContent = `${formattedMinutes}:${formattedSeconds}`;
 
-                // Stop at zero
                 if (timeLeft <= 0) {
                     clearInterval(timer);
                     timerElement.textContent = "00:00";
-                    // Optional: Change text color when ended
                     timerElement.classList.replace('text-primary', 'text-red-500');
                 }
             }, 1000);
